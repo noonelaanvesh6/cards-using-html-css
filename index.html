@@ -1,48 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cards</title>
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Favorites Series</title>
 
-    <!-- Icons -->
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="./favicon.png" sizes="32x32"/>
+    <link rel="apple-touch-icon" href="./favicon.png"/>
+
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- ICONS -->
     <script
       src="https://kit.fontawesome.com/a9a341e618.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
-    <h1>Favourite seies Cards</h1>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="site-header">
+      <div class="header-grid">
+        <img src="assets/logo.png" alt="Logo" class="logo" />
+        <h1>My Favorite Series</h1>
+        <div class="socials">
+          <a
+            href="https://www.instagram.com/eternal.bachelor.king/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/noonela-anvesh-yadav"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/noonelaanvesh6"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://x.com/ImmortalX01" target="_blank" aria-label="X">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a
+            href="https://noonelaanvesh.com/"
+            target="_blank"
+            aria-label="Website"
+          >
+            <i class="fa-solid fa-globe"></i>
+          </a>
+        </div>
+      </div>
+    </header>
 
-    <div class="card">    
-        <div class="card">
-            <img src="assets\1.jpeg" alt="one piece">
+    <!-- MAIN GRID -->
+    <main class="cards">
+      <a href="#onepiece" class="card">
+        <div class="card-img">
+          <img src="./1.jpeg" alt="One Piece" />
         </div>
-        <div class="card">
-            <img src="assets\2.jpeg" alt="naruto">
+        <div class="card-text">
+          <h3>One Piece</h3>
+          <p>Pirate adventure</p>
         </div>
-        <div class="card">
-            <img src="assets\3.jpeg" alt="attack on titan">
-        </div>
-        <div class="card">
-            <img src="assets\4.jpeg" alt="demon slayer">
-        </div>
-        <div class="card">
-            <img src="assets\5.jpeg" alt="jujutsu kaisen">
-        </div>
-        <div class="card">
-            <img src="assets\6.jpeg" alt="kung fu panda">
-        </div>
-        <div class="card">
-            <img src="assets\7.jpeg" alt="shinchan">
-        </div>
-        <div class="card">
-            <img src="assets\8.jpeg" alt="game of thrones">
-        </div>
-        <div class="card">
-            <img src="assets\9.jpeg" alt="chainsaw man">
-        </div>
+      </a>
 
-</body>
+      <a href="#naruto" class="card">
+        <div class="card-img">
+          <img src="./2.jpeg" alt="Naruto" />
+        </div>
+        <div class="card-text">
+          <h3>Naruto</h3>
+          <p>Ninja perseverance</p>
+        </div>
+      </a>
+
+      <a href="#aot" class="card">
+        <div class="card-img">
+          <img src="./3.jpeg" alt="Attack on Titan" />
+        </div>
+        <div class="card-text">
+          <h3>Attack on Titan</h3>
+          <p>Dark survival story</p>
+        </div>
+      </a>
+
+      <a href="#demonslayer" class="card">
+        <div class="card-img">
+          <img src="./4.jpeg" alt="Demon Slayer" />
+        </div>
+        <div class="card-text">
+          <h3>Demon Slayer</h3>
+          <p>Blade vs demons</p>
+        </div>
+      </a>
+
+      <a href="#jujutsu" class="card">
+        <div class="card-img">
+          <img src="./5.jpeg" alt="Jujutsu Kaisen" />
+        </div>
+        <div class="card-text">
+          <h3>Jujutsu Kaisen</h3>
+          <p>Cursed energy battles</p>
+        </div>
+      </a>
+
+      <a href="#kungfu" class="card">
+        <div class="card-img">
+          <img src="./6.jpeg" alt="Kung Fu Panda" />
+        </div>
+        <div class="card-text">
+          <h3>Kung Fu Panda</h3>
+          <p>Comedy & martial arts</p>
+        </div>
+      </a>
+
+      <a href="#shinchan" class="card">
+        <div class="card-img">
+          <img src="./7.jpeg" alt="Shinchan" />
+        </div>
+        <div class="card-text">
+          <h3>Shinchan</h3>
+          <p>Slice-of-life comedy</p>
+        </div>
+      </a>
+
+      <a href="#got" class="card">
+        <div class="card-img">
+          <img src="./8.jpeg" alt="Game of Thrones" />
+        </div>
+        <div class="card-text">
+          <h3>Game of Thrones</h3>
+          <p>Power & politics</p>
+        </div>
+      </a>
+
+      <a href="#chainsaw" class="card">
+        <div class="card-img">
+          <img src="./9.jpeg" alt="Chainsaw Man" />
+        </div>
+        <div class="card-text">
+          <h3>Chainsaw Man</h3>
+          <p>Chaos & dark fantasy</p>
+        </div>
+      </a>
+    </main>
+    <!-- end main grid -->
+
+    <!-- MODALS (CSS ONLY) -->
+    <!-- MODAL 1 -->
+    <div id="onepiece" class="modal">
+      <a href="#" class="close"></a>
+      <div class="modal-content">
+        <img src="./1.jpeg" alt="One Piece" />
+        <div class="modal-text">
+          <h2>One Piece</h2>
+          <p>An epic pirate adventure about freedom, dreams, and loyalty.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 2 -->
+    <div id="naruto" class="modal">
+      <a href="#" class="close"></a>
+      <div class="modal-content">
+        <img src="./2.jpeg" alt="Naruto" />
+        <div class="modal-text">
+          <h2>Naruto</h2>
+          <p>A ninjas journey from rejection to becoming a hero.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 3 -->
+    <div id="aot" class="modal">
+      <a href="#" class="close"></a>
+      <div class="modal-content">
+        <img src="./3.jpeg" alt="Attack on Titan" />
+        <div class="modal-text">
+          <h2>Attack on Titan</h2>
+          <p>A dark tale of survival, sacrifice, and shocking truths.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 4 -->
+    <div id="demonslayer" class="modal">
+      <a href="#" class="close"></a>
+      <div class="modal-content">
+        <img src="./4.jpeg" alt="Demon Slayer" />
+        <div class="modal-text">
+          <h2>Demon Slayer</h2>
+          <p>A swordsmans fight against demons to save his sister.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 5 -->
+    <div id="jujutsu" class="modal">
+      <a href="#" class="close"></a>
+      <div class="modal-content">
+        <img src="./5.jpeg" alt="Jujutsu Kaisen" />
+        <div class="modal-text">
+          <h2>Jujutsu Kaisen</h2>
+          <p>High-octane battles fueled by cursed energy and fate.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 6 -->
+    <div id="kungfu" class="modal">
+      <a href="#" class="close"></a>
+      <div class="modal-content">
+        <img src="./6.jpeg" alt="Kung Fu Panda" />
+        <div class="modal-text">
+          <h2>Kung Fu Panda</h2>
+          <p>A lovable panda discovers his destiny as a kung fu warrior.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 7 -->
+    <div id="shinchan" class="modal">
+      <a href="#" class="close"></a>
+      <div class="modal-content">
+        <img src="./7.jpeg" alt="Shinchan" />
+        <div class="modal-text">
+          <h2>Shinchan</h2>
+          <p>Everyday comedy through the eyes of a mischievous kid.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 8 -->
+    <div id="got" class="modal">
+      <a href="#" class="close"></a>
+      <div class="modal-content">
+        <img src="./8.jpeg" alt="Game of Thrones" />
+        <div class="modal-text">
+          <h2>Game of Thrones</h2>
+          <p>A brutal battle for power, loyalty, and survival.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 9 -->
+    <div id="chainsaw" class="modal">
+      <a href="#" class="close"></a>
+      <div class="modal-content">
+        <img src="./9.jpeg" alt="Chainsaw Man" />
+        <div class="modal-text">
+          <h2>Chainsaw Man</h2>
+          <p>Chaos, devils, and dark humor collide in a brutal world.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2025 Anvesh Favorite Series Gallery</p>
+    </footer>
+  </body>
 </html>
